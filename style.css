@@ -1,0 +1,482 @@
+@font-face {
+	font-family: 'TTLakes'; 
+	src: url("TTLakes-Regular.ttf"); 
+    
+}
+
+@font-face {
+	font-family: 'TTLakes-M'; 
+	src: url("TTLakes-Medium.ttf"); 
+    
+}
+
+@font-face {
+    font-family: 'TTLakes-Bold';
+    src: url('TTLakes-Bold.ttf');
+}
+
+    .title__repair,
+    .title__checkstatus,
+    .visible
+    {
+        visibility:hidden;  
+    }
+
+body
+{
+    margin: 0;
+    font-family: 'TTLakes', Courier, monospace;
+    background: #F8F8F8; 
+}
+
+@media (min-width: 0px)
+{
+    
+
+    .menuback
+    {
+        background: #FFF;
+        display: flex;
+        
+    }
+
+    .menuback__burger
+    {
+        width: 40px;
+        height: 40px;
+        padding-right: 16.73px;
+        padding-left: 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .menuback__divider__first
+    {
+        
+        width: 2px;
+        height: 32px;
+        flex-shrink: 0;
+        background: #EAEAEA;
+        margin-top: 28px;
+        border-radius: 1px;
+        margin-bottom: 28px;
+        margin-left: 16.73px;
+        margin-right: 20px;
+        
+    }
+
+    
+
+    .menuback__group
+    {
+        align-self: center;
+        width: 96.548px;
+        height: 50.815px;
+        padding-top: 18.59px;
+        padding-bottom: 18.59px;
+    }
+
+    .menuback__repair
+    {
+        width: 40px;
+        height: 40px;
+        padding-right: 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .menuback__checkstatus
+    {
+        width: 40px;
+        height: 40px;
+        padding-right: 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .menuback__call
+    {
+        visibility: hidden
+    }
+
+    .menuback__chat
+    {
+        visibility: hidden
+    }
+
+    .menuback__profile
+    {
+        visibility: hidden
+    }
+
+    .shadow
+    {
+        width: 100VW;
+        height: 1px;
+        flex-shrink: 0;
+        background: #D9FFF5;
+        align-self: end;
+    }
+
+    .background
+    {
+        background: #F8F8F8; 
+    }
+
+    .title
+    {
+        display: flex;
+        width: 1000vw;
+    }
+
+    .title__flex
+    {
+        display: flex;
+        padding-top: 24px;
+        padding-right: 12px;         
+    }
+
+    .title__flex__name
+    {
+        font-family: 'TTLakes-Bold';
+        padding-left: 12px;  
+        color: #1B1C21;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 142.857% */
+        letter-spacing: -0.6px;
+    }
+
+    .slidemenu
+    {
+        font-family: 'TTLakes-M';
+        color: #7E7E82;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+        display: flex;
+        padding-left: 16px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        width: 10000px;
+        flex-shrink: 0;
+        
+    }
+
+    .slidemenu__active
+    {
+        margin-top: -8px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: 2px solid #B8FFEC;
+        background: #FFF;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16.54px;
+        padding-right: 9.3px;
+        margin-bottom: 15px;
+    }
+
+    .slidemenu__passive
+    {
+        padding-left: 19.56px;
+        
+    }
+
+    .blur-element
+    {
+        position: absolute;
+        right: 0;
+        width: 24px;
+        height: 40px;
+        background: linear-gradient(270deg, #F8F8F8 0.04%, rgba(248, 248, 248, 0.00) 100%);
+    }
+
+    .outlook__all__text
+    {
+        width: 288px;
+        height: 90px;
+        color: #1B1C21;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 128.571% */
+        letter-spacing: 0.2px;
+        margin-left: 16px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        margin-top: 0;
+    }
+
+    .outlook__all__readMore
+    {
+        font-family: 'TTLakes-M';
+        display: flex;
+        margin-left: 16px;
+        margin-bottom: 16px;
+    }
+
+    .outlook__readMore__all__name
+    {
+        margin-left: 8px;
+        color: #1B1C21;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+    }
+
+    .outlook__preview
+    {
+        width: 320px;
+        height: 176px;
+        flex-shrink: 0;
+    }
+
+    
+    
+}
+
+
+@media (min-width: 768px)
+{
+    .menuback__burger
+    {
+        padding-left: 24px;
+        padding-right: 20px;
+        order: -2;
+        padding-right: 0;
+    }
+    
+    .menuback__divider__first
+    {
+        order: -1;
+        margin-right: 20.73px;
+    }
+
+    .menuback__group
+    {
+        order: 0;
+    }
+
+    .menuback__checkstatus
+    {
+        order: 4;
+        padding-right: 24px;
+    }
+
+    .menuback__repair
+    {
+        order: 3;  
+    }
+
+    .menuback__divider__second
+    {
+        order: 2;
+        width: 2px;
+        height: 32px;
+        flex-shrink: 0;
+        background: #EAEAEA;
+        margin-top: 28px;
+        border-radius: 1px;
+        margin-bottom: 28px;
+        margin-right: 20px;
+        
+    }
+
+    .menuback__call
+    {
+        visibility: visible;
+        padding-right: 16px;
+        padding-left: 250px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .menuback__chat
+    {
+        visibility: visible;
+        padding-right: 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .menuback__profile
+    {
+        visibility: visible;
+        padding-right: 20px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .slidemenu 
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .outlook__all__text
+    {
+        display: flex;
+        width: 312px;
+        height: 160px;
+        color: #1B1C21;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 128.571% */
+        letter-spacing: 0.2px;
+        margin-left: 24px;
+        padding-right: 48px;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .outlook__all
+    {
+        flex-direction: column;
+    }
+    
+    .outlook
+    {
+        display: flex;
+        
+    }
+
+    .outlook__preview
+    {
+        width: 360px;
+        height: 208px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: #F8F8F8;
+
+    }
+
+    .outlook__all__readMore
+    {
+        margin-bottom: 54px;
+    }
+    
+}
+
+@media (min-width: 1120px)
+{
+    .menuback
+    {
+        visibility: hidden;
+    }
+
+    .menuback__call
+    {
+        visibility: hidden
+    }
+
+    .menuback__chat
+    {
+        visibility: hidden
+    }
+
+    .menuback__profile
+    {
+        visibility: hidden
+    }
+
+    .shadow
+    {
+        visibility: hidden;
+    }
+
+    .title
+    {
+        display: flex;   
+        margin-top: -46px;
+        margin-bottom: -17px;
+    }
+
+    .title__flex
+    {
+        
+        
+        padding-top: 0;
+        padding-right: 450px;
+    }
+
+    .title__name
+    {
+        color: #1B1C21;
+        text-align: right;
+        font-family: 'TTLakes-M';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+        padding-right: 8px;
+    }
+
+    .title__repair,
+    .title__checkstatus
+    {
+        visibility: visible;
+        padding-top: 8px;
+        color: #1B1C21;
+        text-align: right;
+        font-family: 'TTLakes-M';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+        padding-right: 8px;
+    }
+
+    .title__flex__name
+    {
+        padding-left: 30px;
+    }
+
+    .title__repairImg
+    {
+        padding-right: 32px;
+    }
+
+    .visible
+    {
+        
+        visibility: visible;
+    }
+
+    .slidemenu
+    {
+        display: flex;
+        padding-left: 40px;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    .outlook__all__text
+    {
+        width: 490px;
+        margin-left: 34px;
+        padding-right: 36px;
+    }
+
+    .outlook__all__readMore
+    {
+        margin-left: 32px;
+    }
+
+    .outlook__preview
+    {
+        width: 531.346px;
+        height: 307px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: #F8F8F8;
+    }
+}
