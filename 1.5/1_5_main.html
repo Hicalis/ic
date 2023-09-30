@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="1_5_main.css">
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="article">Ремонт техники различных брендов</div>
+        </header>
+        <main>
+            <div class="mobile">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" style="max-height: 165px;">
+                        <div class="brands__element swiper-slide first">
+                            <img src="img/Bitmap.png" alt="logo" class="logo">
+                        </div>
+                        <div class="brands__element swiper-slide">
+                            <img src="img/Bitmap.png" alt="logo" class="logo">
+                        </div>
+                        <div class="brands__element swiper-slide">
+                            <img src="img/Bitmap.png" alt="logo" class="logo">
+                        </div>  
+                        <div class="brands__element swiper-slide">
+                            <img src="img/Bitmap.png" alt="logo" class="logo">
+                        </div> 
+                        <div class="brands__element swiper-slide">
+                            <img src="img/Bitmap.png" alt="logo" class="logo">
+                        </div> 
+                        <div class="brands__element swiper-slide">
+                            <img src="img/Bitmap.png" alt="logo" class="logo">
+                        </div> 
+                        <div class="brands__element swiper-slide">
+                            <img src="img/Bitmap.png" alt="logo" class="logo">
+                        </div> 
+                        <div class="brands__element swiper-slide">
+                            <img src="img/Bitmap.png" alt="logo" class="logo">
+                        </div> 
+                        <div class="brands__element swiper-slide">
+                            <img src="img/Bitmap.png" alt="logo" class="logo">
+                        </div> 
+                        <div class="brands__element swiper-slide">
+                            <img src="img/Bitmap.png" alt="logo" class="logo">
+                        </div> 
+                        <div class="brands__element swiper-slide">
+                            <img src="img/Bitmap.png" alt="logo" class="logo">
+                        </div> 
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="expand active">Показать все</div>
+            </div>
+            
+
+              <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+              <script>
+                var swiper = new Swiper(".mySwiper", {
+                  width:240,
+                  spaceBetween: 16,
+                  grabCursor: true,
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                  breakpoints: {
+                    
+                  768: {
+                    
+                    width:224,
+                    enabled:false
+                    }
+                }
+                });
+              </script>
+              <script src="js/1_5_main.js"></script>
+        </main>
+    </body>
+</html>
