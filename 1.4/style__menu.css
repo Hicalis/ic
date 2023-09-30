@@ -1,18 +1,18 @@
 @font-face {
 	font-family: 'TTLakes'; 
-	src: url("TTLakes-Regular.ttf"); 
+	src: url("fonts/TTLakes-Regular.ttf"); 
     
 }
 
 @font-face {
 	font-family: 'TTLakes-M'; 
-	src: url("TTLakes-Medium.ttf"); 
+	src: url("fonts/TTLakes-Medium.ttf"); 
     
 }
 
 @font-face {
     font-family: 'TTLakes-Bold';
-    src: url('TTLakes-Bold.ttf');
+    src: url('fonts/TTLakes-Bold.ttf');
 }
 
 body
@@ -21,6 +21,12 @@ body
     font-family: 'TTLakes', Courier, monospace;
     background: #F8F8F8; 
     
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color:#1B1C21;
 }
 
 .menu{
@@ -39,7 +45,7 @@ body
     padding-bottom: 46.27px;
 }
 
-.menu__top__burger{
+.menu__top > .burger{
     
     padding-left: 24px;
     padding-top: 23px;
@@ -47,19 +53,19 @@ body
     transition: opacity 0.3s ease;
 }
 
-.menu__top>img:hover{
+.menu__top > img:hover{
     
     opacity:0.5;
     
 }
 
-.menu__top__group{
+.menu__top > .group{
     padding-top: 23px;
     transition: opacity 0.3s ease;
     
 }
 
-.menu__top__search{
+.menu__top > .search{
     padding-right: 24px;
     padding-top: 23px;
     margin-left: auto;
@@ -72,7 +78,7 @@ body
     list-style: none;
 }
 
-.menu__selector__list{
+.menu__selector > li{
     padding-bottom: 32px;
     color: #1B1C21;
     font-family: "TTLakes-M";
@@ -83,18 +89,16 @@ body
     letter-spacing: -0.2px;
 }
 
-.menu__selector__list_active{
-    display: flex;
-    padding-bottom: 28px;
+.menu__selector > .active{
+    background-image: url('img/highlight.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
     margin-left: -24px;
-    
+    padding-left: 24px;
+    padding-top: 5px;
 }
 
-.menu__selector__list_active>img{
-   padding-right: 20px;
-}
-
-.menu__selector__list_active>li{
+.menu__selector > .active{
     padding-top: 4px;
     color: #7E7E82;
     font-family: "TTLakes-M";
@@ -112,7 +116,7 @@ body
     padding-bottom: 180px;
 }
 
-.menu__callback>img:hover{
+.menu__callback > img:hover{
     opacity:0.5 ;
 }
 
@@ -130,18 +134,18 @@ body
     letter-spacing: -0.2px;
 }
 
-.menu__callback__chat{
+.menu__callback > .chat{
     padding-left: 24px;
     padding-right: 16px;
     transition: opacity 0.3s ease;
 }
 
-.menu__callback__call{
+.menu__callback > .call{
     padding-right: 16px;
     transition: opacity 0.3s ease;
 }
 
-.menu__callback__profile{
+.menu__callback > .profile{
     transition: opacity 0.3s ease;
 }
 
@@ -177,11 +181,11 @@ body
     padding-bottom: 32px;
 }
 
-.menu__language>li{
+.menu__language > li{
     padding-right: 7px;
 }
 
-.menu__language_active{
+.menu__language > .active{
     color: #7E7E82;
     font-family: 'TTLakes-M';
     font-size: 16px;
