@@ -40,36 +40,33 @@ a{
     
 }
 
+
+
 .menu__top{
     display: flex;
     padding-bottom: 46.27px;
 }
 
-.menu__top > .burger{
+.burger{
     
     padding-left: 24px;
     padding-top: 23px;
     padding-right: 16.73px;
-    transition: opacity 0.3s ease;
-}
-
-.menu__top > img:hover{
-    
-    opacity:0.5;
     
 }
 
-.menu__top > .group{
+
+.group{
     padding-top: 23px;
-    transition: opacity 0.3s ease;
+    
     
 }
 
-.menu__top > .search{
+.search{
     padding-right: 24px;
     padding-top: 23px;
     margin-left: auto;
-    transition: opacity 0.3s ease;
+
 }
 
 .menu__selector{
@@ -181,7 +178,7 @@ a{
     padding-bottom: 32px;
 }
 
-.menu__language > li{
+.menu__language > button{
     padding-right: 7px;
 }
 
@@ -193,4 +190,50 @@ a{
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: -0.2px;
+}
+
+
+@media (min-width:0){
+    
+    .menu{
+        transition: left 0.3s ease-in-out;
+        position: fixed;
+        top:0;
+        left: -100%;
+        width: 100%;
+        z-index: 2;
+        box-shadow: none;
+    }
+    .menu__top > .burger{
+        padding-left: 16px;
+    }
+}
+
+@media(min-width:768px){
+    
+    .menu{
+      width: 440px;
+      background: #FFF;
+      box-shadow: 16px 0px 52px 0px 
+      rgba(14, 24, 80, 0.20), -2px 0px 4px 0px 
+      rgba(69, 79, 126, 0.02);
+    }
+  }
+
+@media(min-width:1120px){
+    .group{
+        margin-left:22px ;
+    }
+    .burger{
+        display: none;
+    }
+    .menu{
+        z-index: 1;
+        transition: left 0s;
+        display: block;
+        box-shadow: none;
+        position: fixed;
+        left: 0% !important;
+        width: 320px;
+    }
 }

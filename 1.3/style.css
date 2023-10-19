@@ -19,7 +19,7 @@
     .title__checkstatus,
     .visible
     {
-        visibility:hidden;  
+        display: none;  
     }
 
 body
@@ -32,11 +32,16 @@ body
 @media (min-width: 0px)
 {
     
-
+    .about{
+        margin-bottom: 24px;
+    }
     .menuback
     {
+        z-index: 10000;
+        height: 88px;
         background: #FFF;
         display: flex;
+        align-items: center;
         
     }
 
@@ -44,78 +49,76 @@ body
     {
         width: 40px;
         height: 40px;
-        padding-right: 16.73px;
-        padding-left: 16px;
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-
-    .menuback__divider__first
-    {
+        margin-left: 16px;
+        margin-right: 16px;
         
-        width: 2px;
-        height: 32px;
-        flex-shrink: 0;
-        background: #EAEAEA;
-        margin-top: 28px;
-        border-radius: 1px;
-        margin-bottom: 28px;
-        margin-left: 16.73px;
-        margin-right: 20px;
         
     }
 
     
 
+    
+
     .menuback__group
     {
-        align-self: center;
+        
         width: 96.548px;
         height: 50.815px;
-        padding-top: 18.59px;
-        padding-bottom: 18.59px;
+        margin-right: 16px;
+        
+    }
+
+    .divider
+    {
+        
+        width: 2px;
+        height: 32px;
+        flex-shrink: 0;
+        border-radius: 1px;
+        background: #EAEAEA;
+        margin-right: 20px;
+        
+        
     }
 
     .menuback__repair
     {
+        margin-left: auto;
         width: 40px;
         height: 40px;
-        padding-right: 16px;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        margin-right: 16px;
     }
 
     .menuback__checkstatus
     {
         width: 40px;
         height: 40px;
-        padding-right: 16px;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        margin-right: 16px;
     }
 
     .menuback__call
     {
-        visibility: hidden
+        display: none;
     }
 
     .menuback__chat
     {
-        visibility: hidden
+        display: none;
     }
 
     .menuback__profile
     {
-        visibility: hidden
+        display: none;
     }
 
     .shadow
     {
-        width: 100VW;
+        width: 100%;
         height: 1px;
         flex-shrink: 0;
         background: #D9FFF5;
         align-self: end;
+        display: block;
     }
 
     .background
@@ -126,13 +129,14 @@ body
     .title
     {
         display: flex;
-        width: 1000vw;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .title__flex
     {
         display: flex;
-        padding-top: 24px;
+        
         padding-right: 12px;         
     }
 
@@ -159,31 +163,25 @@ body
         letter-spacing: -0.2px;
         display: flex;
         padding-left: 16px;
-        margin-top: 32px;
-        margin-bottom: 32px;
-        width: 10000px;
+        margin-bottom: 24px;
+        white-space: nowrap;
         flex-shrink: 0;
-        
+        overflow-x: auto;
     }
 
     .slidemenu__active
     {
-        margin-top: -8px;
         flex-shrink: 0;
         border-radius: 6px;
         border: 2px solid #B8FFEC;
         background: #FFF;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 16.54px;
-        padding-right: 9.3px;
-        margin-bottom: 15px;
-    }
+        padding: 8px;
+     }
 
     .slidemenu__passive
     {
         padding-left: 19.56px;
-        
+        align-self: center;
     }
 
     .blur-element
@@ -197,8 +195,10 @@ body
 
     .outlook__all__text
     {
-        width: 288px;
-        height: 90px;
+    
+    
+        transition: max-height 0.3s;
+        max-height: 100px;
         color: #1B1C21;
         font-size: 14px;
         font-style: normal;
@@ -232,11 +232,13 @@ body
 
     .outlook__preview
     {
-        width: 320px;
-        height: 176px;
+        width: 100%;
+        height: auto;
         flex-shrink: 0;
     }
-
+    .title__repairImg{
+        display: none;
+    }
     
     
 }
@@ -244,18 +246,34 @@ body
 
 @media (min-width: 768px)
 {
+    .about{
+        margin-bottom: 0;
+    }
+    .title{
+        padding-bottom: 32px;
+    }
     .menuback__burger
     {
-        padding-left: 24px;
-        padding-right: 20px;
+        margin-left: 24px;
         order: -2;
-        padding-right: 0;
+        
     }
     
-    .menuback__divider__first
+    .divider
     {
         order: -1;
         margin-right: 20.73px;
+    }
+
+    .divider--right{
+        
+        margin-right: 20.73px;
+        width: 2px;
+        height: 32px;
+        flex-shrink: 0;
+        border-radius: 1px;
+        background: #EAEAEA;
+        
     }
 
     .menuback__group
@@ -271,6 +289,7 @@ body
 
     .menuback__repair
     {
+        margin-left: 0;
         order: 3;  
     }
 
@@ -290,7 +309,8 @@ body
 
     .menuback__call
     {
-        visibility: visible;
+        margin-left: auto;
+        display: block;
         padding-right: 16px;
         padding-left: 250px;
         padding-top: 24px;
@@ -299,7 +319,7 @@ body
 
     .menuback__chat
     {
-        visibility: visible;
+        display: block;
         padding-right: 16px;
         padding-top: 24px;
         padding-bottom: 24px;
@@ -307,7 +327,7 @@ body
 
     .menuback__profile
     {
-        visibility: visible;
+        display: block;
         padding-right: 20px;
         padding-top: 24px;
         padding-bottom: 24px;
@@ -315,15 +335,15 @@ body
 
     .slidemenu 
     {
-        margin-top: 40px;
         margin-bottom: 40px;
+        padding-left: 24px;
     }
 
     .outlook__all__text
     {
         display: flex;
-        width: 312px;
-        height: 160px;
+        
+        
         color: #1B1C21;
         font-size: 14px;
         font-style: normal;
@@ -343,13 +363,16 @@ body
     
     .outlook
     {
+        width: 94%;
         display: flex;
+       
         
     }
 
     .outlook__preview
     {
-        width: 360px;
+        margin-left: auto;
+        width: auto;
         height: 208px;
         flex-shrink: 0;
         border-radius: 6px;
@@ -359,43 +382,26 @@ body
 
     .outlook__all__readMore
     {
-        margin-bottom: 54px;
+        margin-bottom: 0;
     }
+    
     
 }
 
 @media (min-width: 1120px)
 {
-    .menuback
-    {
-        visibility: hidden;
-    }
 
-    .menuback__call
-    {
-        visibility: hidden
+    .about{
+        margin-bottom: 50px;
     }
+    
 
-    .menuback__chat
-    {
-        visibility: hidden
-    }
-
-    .menuback__profile
-    {
-        visibility: hidden
-    }
-
-    .shadow
-    {
-        visibility: hidden;
-    }
+    
 
     .title
     {
-        display: flex;   
-        margin-top: -46px;
-        margin-bottom: -17px;
+        display: flex;
+        padding-top: 42px;   
     }
 
     .title__flex
@@ -403,7 +409,11 @@ body
         
         
         padding-top: 0;
-        padding-right: 450px;
+       
+    }
+
+    .menuback{
+        display: none;
     }
 
     .title__name
@@ -419,20 +429,40 @@ body
         padding-right: 8px;
     }
 
+    .title__repair{
+        margin-left: auto;
+    }
+
     .title__repair,
     .title__checkstatus
     {
+        
+        display: block;
         visibility: visible;
-        padding-top: 8px;
         color: #1B1C21;
-        text-align: right;
         font-family: 'TTLakes-M';
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: 24px; /* 150% */
         letter-spacing: -0.2px;
-        padding-right: 8px;
+    }
+
+    .title__repair{
+        width: 218px;
+        background-image: url(/src/img/repair.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-right: 32px;
+    }
+
+    .title__checkstatus{
+        margin-right: 30px;
+        text-align: start;
+        width: 165px;
+        background-image: url(/src/img/checkstatus.svg);
+        background-repeat: no-repeat;
+        background-position: right;
     }
 
     .title__flex__name
@@ -440,14 +470,12 @@ body
         padding-left: 30px;
     }
 
-    .title__repairImg
-    {
-        padding-right: 32px;
-    }
+ 
 
     .visible
     {
-        
+        padding-right: 30px;
+        display: block;
         visibility: visible;
     }
 
@@ -456,12 +484,13 @@ body
         display: flex;
         padding-left: 40px;
         flex-wrap: wrap;
-        width: 100vw;
+        
     }
 
     .outlook__all__text
     {
-        width: 490px;
+        flex-grow: 1;
+        
         margin-left: 34px;
         padding-right: 36px;
     }
@@ -473,10 +502,15 @@ body
 
     .outlook__preview
     {
+        
         width: 531.346px;
         height: 307px;
         flex-shrink: 0;
         border-radius: 6px;
         background: #F8F8F8;
+    }
+
+    .background{
+        margin-left: 320px;
     }
 }

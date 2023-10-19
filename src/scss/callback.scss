@@ -1,0 +1,125 @@
+@media(min-width:0){
+  .callback{
+
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  transition: right 0.3s;
+  position: fixed;
+  top:0;
+  right: -100%;
+  width: 100%;
+        z-index: 2;
+  .callback__close{
+    margin-left: 16px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    height: 40px;
+    width: 40px;
+  }
+  h2{
+    color: #1B1C21;
+    font-family: '700';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.6px;
+    background-image: url('/src/img/highlight.svg');
+    background-repeat: no-repeat;
+    padding-left: 16px;
+    margin-bottom: 24px;
+  }
+  .callback__input{
+    display: flex;
+    flex-direction: column;
+    input::placeholder,
+    textarea::placeholder{
+      color: #B5B6BC;
+      
+    }
+    textarea,input{
+      
+      font-family: '500';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 150% */
+      letter-spacing: -0.2px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
+      
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      border: 1px solid #EAEAEA;
+      background: #FFF;
+    }
+    textarea{
+      height: 118px;
+      min-height: 118px;
+      resize: vertical;
+      margin-bottom: 16px;
+    }
+   
+  }
+  p{
+    margin: 0 16px 23px 16px;
+    color: #7E7E82;
+    font-family: '500';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    a{
+      color: #FF3E79;
+      font-family: '500';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+    }
+  }
+  .callback__send{
+    display: flex;
+    border-radius: 16px;
+    background: #FF3E79;
+    color: #FFF;
+    text-align: right;
+    font-family: '700';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    margin-left: auto;
+    margin-right: 32px;
+  }
+  }
+}
+
+@media(min-width:768px){
+  .fog{
+    transition: opacity 1s;
+    position: fixed;
+    opacity: 0;
+    background: #FFF; 
+    width: 100%;
+    height: 100%;  
+    z-index: -1;
+  }
+  .callback{
+    width: 440px;
+    background: #FFF;
+    box-shadow: 16px 0px 52px 0px 
+    rgba(14, 24, 80, 0.20), -2px 0px 4px 0px 
+    rgba(69, 79, 126, 0.02);
+  }
+}

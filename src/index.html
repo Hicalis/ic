@@ -1,0 +1,438 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="/webpack-static-template/src/scss/style.scss">
+    </head>
+    <body>
+        <div class="fog"></div>
+        <div class="menu">
+            <div class="menu__top">
+                <button class="burger"><img src="img/cancel.svg"></button>
+                <button class="group"><img src="img/Group.svg" ></button>
+                <button class="search"><img src="img/search.svg" ></button>
+            </div>
+            <ul class="menu__selector">
+                <li class="active">Ремонт техники</li>
+                <li>Услуги и сервисы</li>
+                <li>Корпоративным клиентам</li>
+                <li>Продавцам техники</li>
+                <li>Партнерам</li>
+                <li>Производителям</li>
+                <li>Наши сервисные центры</li>
+                <li>Контакты</li>
+            </ul> 
+            <div class="menu__callback">
+                <button class="chat"><img src="img/chat.svg"></button>
+                <button class="call"><img src="img/call.svg"></button>
+                <button class="profile"><img src="img/profile.svg"></button>
+            </div>       
+            <div class="menu__email"><a href="#">mail@cps.com</a></div>
+            <div class="menu__phone"><a href="#">8 800 890 8900</a></div>
+            <div class="menu__language">
+                <button class="active">RU</button>
+                <button>EN</button>
+                <button>CH</button>
+            </div>
+        </div>
+        <aside class="callback">
+            <button class="callback__close"><img src="img/cancel.svg"></button>
+            <h2>Обратная связь</h2>
+            <div class="callback__input">
+                <input placeholder="Имя" type="text"></input>
+                <input placeholder="Телефон" type="text"></input>
+                <input placeholder="Электронная почта" type="text"></input>
+                <textarea placeholder="Сообщение" type="text"></textarea>
+            </div>
+            <p>
+                Нажимая “отправить”, вы даете согласие на 
+                <a href="#">обработку персональных данных</a> и соглашаетесь 
+                с нашей <a href="#">политикой конфиденциальности </a>
+            </p>
+            <button class="callback__send">
+                отправить
+                <img src="img/goside.svg">
+            </button>
+        </aside>
+
+        <aside class="close-call">
+            <button class="close-call__close"><img src="img/cancel.svg"></button>
+            <h2>Заказать звонок</h2>
+            <input placeholder="Телефон" type="text"></input>
+            <p>
+                Нажимая “отправить”, вы даете согласие на 
+                <a href="#">обработку персональных данных</a> и соглашаетесь 
+                с нашей <a href="#">политикой конфиденциальности </a>
+            </p>
+            <button class="close-call__send">
+                отправить
+                <img src="img/goside.svg">
+            </button>
+        </aside>
+
+        <header class="menuback">
+            <button class="menuback__burger"><img src="/src/img/burger.svg "></button>
+            <button class="menuback__group"><img src="/src/img/Group.svg"></button>
+            <span class="divider"></span>
+            <button class="menuback__repair"><img src="/src/img/repair.svg" ></button>
+            <button class="menuback__checkstatus"><img src="/src/img/checkstatus.svg"></button>
+            <button class="menuback__call"><img src="/src/img/call.svg"></button>
+            <button class="menuback__chat"><img src="/src/img/chat.svg"></button>
+            <button class="menuback__profile"><img src="/src/img/profile.svg"></button>
+            <span class="divider--right"></span>
+
+
+        </header>
+        <div class="shadow"></div>
+        <main class="background">
+            <div class="title">
+                <div class="title__flex">
+                    <img src="/src/img/highlight.svg">
+                    <h1 class="title__flex__name">Услуги и сервисы</h1>
+                </div>
+                <button class="title__repair">Оставить заявку</button>
+                
+                <button class="title__checkstatus">Статус ремонта</button>
+                
+
+            </div>
+            <div class="slidemenu">
+                <button class="slidemenu__active">Ремонтируемые бренды</button>
+                <button class="slidemenu__passive">Ремонтируемые устройства</button>
+                <button class="slidemenu__passive">Цены на услуги</button>
+                <button class="slidemenu__passive">Адреса сервисных центров</button>
+                <button class="slidemenu__passive">Специальные цены</button>
+                <button class="slidemenu__passive">Отзывы</button>
+                <button class="slidemenu__passive">Адреса сервисных центров</button>
+                <div class="blur-element"></div>
+            </div>
+            <section class="about">
+                <div class="outlook">
+                    <div class="outlook__all">
+                        <p class="outlook__all__text">
+                            Мы являемся авторизованным сервисным центром 
+                            по ремонту техники Dell. Только у нас вы можете 
+                            отремонтировать свой ноутбук Dell с официальной 
+                            гарантией производителя. <br><br>Мы успешно работаем с 1992 
+                            года и заслужили репутацию надежного партнера, что 
+                            подтверждает большое количество постоянных клиентов. 
+                            Мы гордимся тем, что к нам обращаются по 
+                            рекомендациям и, в свою очередь, советуют нас родным 
+                            и близким.
+                        </p>
+                        <button class="outlook__all__readMore ">
+                            <img src="/src/img/expand.svg">
+                            <div class="outlook__readMore__all__name">
+                            Читать далее</div>
+                        </button>
+                    </div>
+                    <img src="/src/img/ec28084f3de98850700667e14dbc02fd.png" class="outlook__preview">
+                </div>
+            </section>
+            <section class="brand">
+                <h2 class="article">Ремонт техники различных брендов</h2>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" style="max-height: 165px;">
+                            <div class="brands__element swiper-slide">
+                                <img src="img/Bitmap.png" alt="logo" class="logo">
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div>
+                            <div class="brands__element swiper-slide">
+                                <img src="img/Bitmap.png" alt="logo" class="logo">
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div>
+                            <div class="brands__element swiper-slide">
+                                <img src="img/Bitmap.png" alt="logo" class="logo">
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div>  
+                            <div class="brands__element swiper-slide">
+                                <img src="img/Bitmap.png" alt="logo" class="logo">
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div> 
+                            <div class="brands__element swiper-slide">
+                                <img src="img/Bitmap.png" alt="logo" class="logo">
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div> 
+                            <div class="brands__element swiper-slide">
+                                <img src="img/Bitmap.png" alt="logo" class="logo">
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div> 
+                            <div class="brands__element swiper-slide">
+                                <img src="img/Bitmap.png" alt="logo" class="logo">
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div> 
+                            <div class="brands__element swiper-slide">
+                                <img src="img/Bitmap.png" alt="logo" class="logo">
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div> 
+                            <div class="brands__element swiper-slide">
+                                <img src="img/Bitmap.png" alt="logo" class="logo">
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div> 
+                            <div class="brands__element swiper-slide">
+                                <img src="img/Bitmap.png" alt="logo" class="logo">
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div> 
+                            <div class="brands__element swiper-slide">
+                                <img src="img/Bitmap.png" alt="logo" class="logo">
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div> 
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <button class="expand active">Показать все</button>
+                </div>
+            </section>
+            <section class="repair">
+                <h2 class="article">Ремонт различных видов техники</h2>
+                    <div class="swiper mySwiper type">
+                        <div class="swiper-wrapper swiper-wrapperType swiperType" style="max-height: 198px;">
+                            <div class="type__element swiper-slide">
+                                <h3 class="name">Ремонт ноутбуков</h3>
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div>
+                            <div class="type__element swiper-slide">
+                                <h3 class="name">Ремонт ноутбуков</h3>
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div>
+                            <div class="type__element swiper-slide">
+                                <h3 class="name">Ремонт ноутбуков</h3>
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div> 
+                            <div class="type__element swiper-slide">
+                                <h3 class="name">Ремонт ноутбуков</h3>
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div>
+                            <div class="type__element swiper-slide">
+                                <h3 class="name">Ремонт ноутбуков</h3>
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div>
+                            <div class="type__element swiper-slide">
+                                <h3 class="name">Ремонт ноутбуков</h3>
+                                <a href="#" class="img">
+                                    <img src="./img/go.svg" >
+                                </a>
+                            </div>
+                        
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <button class="expandType activeType">Показать все</button>
+                </div>
+            </section>
+        <section class="services">
+            <h2 class="article">Цены на услуги</h2>
+                <div class="swiper mySwiperPrice type" >
+                    <div class="swiper-wrapper swiper-wrapperType swiperType">
+                        <div class="services__name">
+                            <h2>
+                                Ремонтные услуги
+                            </h2>
+                            <h2>
+                                Цена
+                            </h2>
+                            <h2>
+                                Срок
+                            </h2>
+                        </div>
+                        <div class="price__element swiper-slide">
+                            <div class="description">
+                                <h3>Ремонтные услуги
+                                    <h4>Тестирование с выдачей технического
+                                        заключения</h4>
+                                </h3>       
+                                <h3>Цена
+                                    <h4>Бесплатно</h4>
+                                </h3>                                   
+                                <h3>Срок
+                                    <h4>30-120 мин</h4>
+                                </h3>
+                            </div>
+                            <a href="#" class="buy">
+                                <h3>заказать</h3>
+                                <img src="/src/img/goside.svg">
+                            </a>
+                        </div>
+                            
+                        <div class="price__element swiper-slide">
+                            <div class="description">
+                                <h3>Ремонтные услуги
+                                    <h4>Диагностика</h4>
+                                </h3>
+                                    
+                                <h3>Цена
+                                    <h4>1000 Р</h4>
+                                </h3>
+                                    
+                                <h3>Срок
+                                    <h4>30 мин</h4>
+                                </h3>
+                            </div>
+                            <a href="#" class="buy">
+                                <h3>заказать</h3>
+                                <img src="/src/img/goside.svg">
+                            </a>
+                        </div>
+                        <div class="price__element swiper-slide">
+                            <div class="description">
+                                <h3>Ремонтные услуги
+                                    <h4>Тестирование с выдачей технического заключения</h4>
+                                </h3>
+                                    
+                                <h3>Цена
+                                    <h4>Бесплатно</h4>
+                                </h3>
+                                    
+                                <h3>Срок
+                                    <h4>30-120 мин</h4>
+                                </h3>
+                            </div>
+                            <a href="#" class="buy">
+                                <h3>заказать</h3>
+                                <img src="/src/img/goside.svg">
+                            </a>
+                        </div>
+                        <div class="price__element swiper-slide">
+                            <div class="description">
+                                <h3>Ремонтные услуги
+                                    <h4>Тестирование с выдачей технического заключения</h4>
+                                </h3>
+                                    
+                                <h3>Цена
+                                    <h4>Бесплатно</h4>
+                                </h3>
+                                    
+                                <h3>Срок
+                                    <h4>30-120 мин</h4>
+                                </h3>
+                            </div>
+                            <a href="#" class="buy">
+                                <h3>заказать</h3>
+                                <img src="/src/img/goside.svg">
+                            </a>
+                        </div>
+                        <div class="price__element swiper-slide">
+                            <div class="description">
+                                <h3>Ремонтные услуги
+                                    <h4>Тестирование с выдачей технического заключения</h4>
+                                </h3>
+                                    
+                                <h3>Цена
+                                    <h4>Бесплатно</h4>
+                                </h3>
+                                    
+                                <h3>Срок
+                                    <h4>30-120 мин</h4>
+                                </h3>
+                            </div>
+                            <a href="#" class="buy">
+                                <h3>заказать</h3>
+                                <img src="/src/img/goside.svg">
+                            </a>
+                        </div>
+                        <div class="price__element swiper-slide">
+                            <div class="description">
+                                <h3>Ремонтные услуги
+                                    <h4>Тестирование с выдачей технического заключения</h4>
+                                </h3>
+                                    
+                                <h3>Цена
+                                    <h4>Бесплатно</h4>
+                                </h3>
+                                    
+                                <h3>Срок
+                                    <h4>30-120 мин</h4>
+                                </h3>
+                            </div>
+                            <a href="#" class="buy">
+                                <h3>заказать</h3>
+                                <img src="/src/img/goside.svg">
+                            </a>
+                        </div>
+                        <div class="price__element swiper-slide">
+                            <div class="description">
+                                <h3>Ремонтные услуги
+                                    <h4>Тестирование с выдачей технического заключения</h4>
+                                </h3>
+                                    
+                                <h3>Цена
+                                    <h4>Бесплатно</h4>
+                                </h3>
+                                    
+                                <h3>Срок
+                                    <h4>30-120 мин</h4>
+                                </h3>
+                            </div>
+                            <a href="#" class="buy">
+                                <h3>заказать</h3>
+                                <img src="/src/img/goside.svg">
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h2 class="nds">Все цены указаны с учетом НДС. Стоимость ремонта указана на 
+                    единичную услугу. Для получения коммерческого предложения на 
+                    постоянное обслуживание, оставьте заявку.
+                </h2>
+                
+                <a href="#" class="services__commercial">Получить
+                     коммерческое предложение</a>
+            </section>
+            <footer>
+                <h2>© 2019 CPS
+                    Разработано командой Apesong 
+                </h2>
+                <h2><a href="#"> Политика конфиденциальности</a></h2>
+                
+                   
+                
+                <h2>
+                    Информация, размещенная на данной странице, 
+                    не является публичной офертой
+                </h2>
+            </footer>
+
+
+
+              <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+              
+        </main>
+    </body>
+</html>

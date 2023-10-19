@@ -15,18 +15,27 @@
     src: url("fonts/TTLakes-Bold.ttf");
 }
 
+button{
+    appearance: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #F8F8F8;
+}
+
+header{
+    margin: 0;
+    
+}
+
 @media (min-width: 0px){
-    body{
-        margin: 0;
-        padding: 0;
-        background: #F8F8F8;
-    }
-    header{
-        margin: 0;
-        background: linear-gradient(270deg, #FFF 0%,  #F8F8F8 98.61%);
-    }
+    
+    
 
     .article{
+        background: linear-gradient(270deg, #FFF 0%,  #F8F8F8 98.61%);
         padding: 16px;    
         color: #7E7E82;
         font-family: 'TTLakes';
@@ -62,7 +71,7 @@
     border: 1px solid #EAEAEA;
     background: #FFF;
     align-items: center;
-    background-image: url('img/go.svg');
+    background-image: url('/src/img/go.svg');
     background-repeat: no-repeat;
     background-position: 184px 50%;
     }
@@ -123,6 +132,8 @@
         position:fixed;
     }
     
+    
+
     .expand{
         display: block;
         color: #1B1C21;

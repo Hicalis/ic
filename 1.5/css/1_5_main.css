@@ -16,6 +16,10 @@
 }
 
 @media (min-width: 0px){
+    .brands__element > a{
+        padding-right: 16px;
+        margin-left: auto;
+    }
     body{
         margin: 0;
         padding: 0;
@@ -23,10 +27,11 @@
     }
     header{
         margin: 0;
-        background: linear-gradient(270deg, #FFF 0%,  #F8F8F8 98.61%);
+        
     }
 
     .article{
+        background: linear-gradient(270deg, #FFF 0%,  #F8F8F8 98.61%);
         padding: 16px;    
         color: #7E7E82;
         font-family: 'TTLakes';
@@ -46,15 +51,12 @@
     display: flex;
     padding-top: 16px;
     padding-left: 16px;
+    
     }
 
-    .swiper-wrapper{
-    padding-top: 16px;
-    padding-left: 16px;
-    }
+   
 
-    .swiper-wrapper > .brands__element{
-    margin-right: 16px;
+    .brands__element{
     display: flex;
     width: 240px;
     height: 72px;
@@ -62,13 +64,12 @@
     border: 1px solid #EAEAEA;
     background: #FFF;
     align-items: center;
-    background-image: url('img/go.svg');
-    background-repeat: no-repeat;
-    background-position: 184px 50%;
+    margin-right: 16px;
     }
-
+    
     .brands__element > .logo{
     padding-left: 16px;
+
     }
 
     .blur-element
@@ -123,6 +124,11 @@
         position:fixed;
     }
     
+    .brands__element{
+        flex: 1 0 30%;
+        margin-right: 24px;
+    }
+
     .expand{
         display: block;
         color: #1B1C21;
@@ -133,11 +139,22 @@
         line-height: 24px; /* 150% */
         letter-spacing: -0.2px;
         padding-left: 63px;
-        background-image: url('img/expandUp.svg');
+        background-image: url('/src/img/expandUp.svg');
         background-repeat: no-repeat;
-        background-position: 32px 100%;
-        padding-top: 24px;
+        background-position: 32px 0%;
+        padding-bottom: 32px;
     }
 
     
+}
+
+@media (min-width: 1400px){
+    .expand{
+        padding-bottom: 50px;
+    }
+    .brands__element{
+        flex: 1 0 20%;
+        margin-right: 32px;
+    }
+
 }
