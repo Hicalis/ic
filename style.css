@@ -731,7 +731,7 @@ a{
 }
 
 .menu__selector > .active{
-    background-image: url('/src/img/highlight.svg');
+    background-image: url(./static/highlight.svg);
     background-repeat: no-repeat;
     background-position: left top;
     margin-left: -24px;
