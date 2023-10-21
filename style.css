@@ -1281,7 +1281,7 @@ a{
       .callback .callback__input textarea::placeholder {
         color: #B5B6BC; }
       .callback .callback__input textarea, .callback .callback__input input {
-        font-family: '500';
+        font-family: 'TTLakes-M';
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
