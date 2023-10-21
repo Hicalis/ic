@@ -450,7 +450,7 @@ body
 
     .title__repair{
         width: 218px;
-        background-image: url(/src/img/repair.svg);
+        background-image: url(./static/repair.svg);
         background-repeat: no-repeat;
         background-position: right;
         margin-right: 32px;
@@ -460,7 +460,7 @@ body
         margin-right: 30px;
         text-align: start;
         width: 165px;
-        background-image: url(/src/img/checkstatus.svg);
+        background-image: url(./static/checkstatus.svg);
         background-repeat: no-repeat;
         background-position: right;
     }
