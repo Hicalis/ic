@@ -1094,7 +1094,7 @@ a{
     height: 27px;
     position: absolute;
     content: '';
-    background-image: url(/src/img/more.svg);
+    background-image: url(./static/more.svg);
     background-repeat: no-repeat; }
   .services__name {
     display: none; } }
@@ -1307,7 +1307,7 @@ a{
     .callback p {
       margin: 0 16px 23px 16px;
       color: #7E7E82;
-      font-family: '500';
+      font-family: 'TTLakes-M';
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
@@ -1315,7 +1315,7 @@ a{
       /* 114.286% */ }
       .callback p a {
         color: #FF3E79;
-        font-family: '500';
+        font-family: 'TTLakes-M';
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
