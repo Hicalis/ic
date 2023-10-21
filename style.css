@@ -196,7 +196,7 @@ body
     .outlook__all__text
     {
     
-    
+        font-family: 'TTLakes-M';
         transition: max-height 0.3s;
         max-height: 100px;
         color: #1B1C21;
@@ -915,7 +915,7 @@ a{
     .type__element .name {
       padding: 16px;
       color: #1B1C21;
-      font-family: '500';
+      font-family: 'TTLakes-M';
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -1019,7 +1019,7 @@ a{
       padding-top: 16px;
       padding-left: 16px;
       color: #7E7E82;
-      font-family: '500';
+      font-family: 'TTLakes-M';
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
@@ -1028,7 +1028,7 @@ a{
     .price__element h4 {
       padding-left: 16px;
       color: #1B1C21;
-      font-family: '400';
+      font-family: 'TTLakes';
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
@@ -1055,7 +1055,7 @@ a{
     .buy h3 {
       color: #ffffff;
       text-align: right;
-      font-family: '700';
+      font-family: 'TTLakes-B';
       font-size: 12px;
       font-style: normal;
       font-weight: 700;
@@ -1070,7 +1070,7 @@ a{
     padding-right: 16px;
     padding-bottom: 16px;
     color: #1B1C21;
-    font-family: '400';
+    font-family: 'TTLakes';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1081,7 +1081,7 @@ a{
     width: 15px;
     padding-left: 16px;
     color: #1B1C21;
-    font-family: '500';
+    font-family: 'TTLakes-M';
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -1127,7 +1127,7 @@ a{
     .services__name h2 {
       opacity: 0.7218;
       color: #7E7E82;
-      font-family: '500';
+      font-family: 'TTLakes-M';
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
@@ -1214,7 +1214,7 @@ a{
     footer a, footer h2 {
       color: #7E7E82;
       text-align: center;
-      font-family: '500';
+      font-family: 'TTLakes-M';
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
