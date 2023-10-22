@@ -41,13 +41,14 @@
 
     .brands__element{
     display: flex;
-    width: 240px;
     height: 72px;
     border-radius: 6px;
     border: 1px solid #EAEAEA;
     background: #FFF;
     align-items: center;
     margin-right: 16px;
+    flex-shrink: 0;
+    
     }
     
     .brands__element > .logo{
@@ -84,7 +85,10 @@
     .swiper-wrapper > .brands__element{
         background-position: 168px 50%;
       }
-
+      .repair>    .swiper-wrapper{
+        max-height: 178px;
+      }
+    
     .swiper-wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -108,7 +112,7 @@
     }
     
     .brands__element{
-        flex: 1 0 30%;
+        width: calc((100% - 80px) / 3) !important;
         margin-right: 24px;
     }
 
@@ -128,6 +132,8 @@
         padding-bottom: 32px;
     }
 
+    
+    
     
 }
 

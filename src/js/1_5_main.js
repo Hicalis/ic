@@ -174,8 +174,3 @@ var swiper = new Swiper(".mySwiperPrice", {
 });
 
 
-// if (window.innerWidth >= 768) {
-//     console.log(123);
-//     type.style.maxHeight = "178px";
-//   } 
-

@@ -179,9 +179,19 @@ body
 
     .slidemenu__passive
     {
-        padding-left: 19.56px;
+        
+        margin-left: 19.56px;
         align-self: center;
+        padding: 8px;
     }
+
+    
+
+    .slidemenu__passive:hover {
+        background-color: white;
+        box-shadow: 0 0 0 2px blue;
+        border-radius: 0.6rem;
+      }
 
     .blur-element
     {

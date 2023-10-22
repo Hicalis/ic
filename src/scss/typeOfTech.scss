@@ -95,7 +95,7 @@
         }
   }
 
-
+ 
 @media (min-width: 768px){
   .article{
     padding-left: 24px;
@@ -113,6 +113,7 @@
       }
 
     .swiper-wrapper{
+        max-height: 50%;
         display: flex;
         flex-wrap: wrap;
         transform: translate3d(0px, 0px, 0px) !important;
@@ -135,7 +136,7 @@
     }
     
     .type__element{
-      flex: 1 0 30%;
+      width: calc((100% - 80px) / 3) !important;
       margin-right: 24px;
     }
 
