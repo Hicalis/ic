@@ -101,13 +101,13 @@ buttonAbout.addEventListener('click', function(){
     textAbout.style.maxHeight = '';
     textAbout.classList.remove("active");
     buttonAboutText.textContent = "Читать далее";
-    buttonAboutImg.src = '/src/img/expand.svg';
+    buttonAboutImg.src = 'img/expand.svg';
   }
   else{
     textAbout.style.maxHeight = '400px';
     textAbout.classList.add('active');
     buttonAboutText.textContent = "Скрыть";
-    buttonAboutImg.src = '/src/img/expand copy.svg';
+    buttonAboutImg.src = 'img/expand copy.svg';
   }
 });
 
@@ -116,7 +116,7 @@ showMore.addEventListener('click',function (){
         brands.style.maxHeight = "350px";
         showMore.textContent = "Скрыть";
         showMore.classList.remove("active");
-        showMore.style.backgroundImage = "url('/src/img/expand copy.svg')";
+        showMore.style.backgroundImage = "url('img/expand copy.svg')";
     }
     else{
         brands.style.maxHeight = "165px";
@@ -131,7 +131,7 @@ showMoreType.addEventListener('click',function (){
         type.style.maxHeight = "360px";
         showMoreType.textContent = "Скрыть";
         showMoreType.classList.remove("activeType");
-        showMoreType.style.backgroundImage = "url('/src/img/expand copy.svg')";
+        showMoreType.style.backgroundImage = "url('img/expand copy.svg')";
     }
     else{
         type.style.maxHeight = "178px";

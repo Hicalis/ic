@@ -8,7 +8,7 @@
 	src: url("/fonts/TTLakes-Bold.ttf"); 
 }
 
-@media(min-width:0px){
+
   .services{
     margin-bottom: 57px;
   }
@@ -23,11 +23,12 @@
       display: flex;
       flex-direction: column;
       h3{
+        
         display: flex;
         padding-top: 16px;
         padding-left: 16px;
         color: #7E7E82;
-        font-family: '500';
+        font-family: 'TTLakes-M';
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -38,7 +39,7 @@
         
         padding-left: 16px;
         color: #1B1C21;
-        font-family: '400';
+        font-family: 'TTLakes';
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -71,7 +72,7 @@
         h3{
           color: #ffffff;
           text-align: right;
-          font-family: '700';
+          font-family: 'TTLakes-Bold';
           font-size: 12px;
           font-style: normal;
           font-weight: 700;
@@ -88,7 +89,7 @@
           padding-right: 16px;
           padding-bottom: 16px;
           color: #1B1C21;
-          font-family: '400';
+          font-family: 'TTLakes';
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
@@ -101,7 +102,7 @@
             width: 15px;
             padding-left: 16px;
             color: #1B1C21;
-            font-family: '500';
+            font-family: 'TTLakes-M';
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
@@ -116,14 +117,14 @@
             height: 27px;
             position: absolute;
             content: '';
-            background-image: url(/src/img/more.svg);
+            background-image: url(../img/more.svg);
             background-repeat: no-repeat;
           }
           .services__name{
             display: none;
           }
         
-    }
+    
 
     @media (min-width:768px){
       
@@ -163,7 +164,7 @@
         h2{
           opacity: 0.7218;
           color: #7E7E82;
-          font-family: '500';
+          font-family: 'TTLakes-M';
           font-size: 14px;
           font-style: normal;
           font-weight: 500;
