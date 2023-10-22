@@ -1,0 +1,525 @@
+@font-face {
+	font-family: 'TTLakes'; 
+	src: url("../fonts/TTLakes-Regular.ttf"); 
+    
+}
+
+@font-face {
+	font-family: 'TTLakes-M'; 
+	src: url("../fonts/TTLakes-Medium.ttf"); 
+    
+}
+
+@font-face {
+    font-family: 'TTLakes-Bold';
+    src: url('../fonts/TTLakes-Bold.ttf');
+}
+
+    .title__repair,
+    .title__checkstatus,
+    .visible
+    {
+        display: none;  
+    }
+
+body
+{
+    margin: 0;
+    font-family: 'TTLakes', Courier, monospace;
+    background: #F8F8F8; 
+}
+
+
+    
+    .about{
+        margin-bottom: 24px;
+    }
+    .menuback
+    {
+        z-index: 10000;
+        height: 88px;
+        background: #FFF;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .menuback__burger
+    {
+        width: 40px;
+        height: 40px;
+        margin-left: 16px;
+        margin-right: 16px;
+        
+        
+    }
+
+    
+
+    
+
+    .menuback__group
+    {
+        
+        width: 96.548px;
+        height: 50.815px;
+        margin-right: 16px;
+        
+    }
+
+    .divider
+    {
+        
+        width: 2px;
+        height: 32px;
+        flex-shrink: 0;
+        border-radius: 1px;
+        background: #EAEAEA;
+        margin-right: 20px;
+        
+        
+    }
+
+    .menuback__repair
+    {
+        margin-left: auto;
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+    }
+
+    .menuback__checkstatus
+    {
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+    }
+
+    .menuback__call
+    {
+        display: none;
+    }
+
+    .menuback__chat
+    {
+        display: none;
+    }
+
+    .menuback__profile
+    {
+        display: none;
+    }
+
+    .shadow
+    {
+        width: 100%;
+        height: 1px;
+        flex-shrink: 0;
+        background: #D9FFF5;
+        align-self: end;
+        display: block;
+    }
+
+    .background
+    {
+        background: #F8F8F8; 
+    }
+
+    .title
+    {
+        display: flex;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .title__flex
+    {
+        display: flex;
+        
+        padding-right: 12px;         
+    }
+
+    .title__flex__name
+    {
+        font-family: 'TTLakes-Bold';
+        padding-left: 12px;  
+        color: #1B1C21;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 142.857% */
+        letter-spacing: -0.6px;
+    }
+
+    .slidemenu
+    {
+        font-family: 'TTLakes-M';
+        color: #7E7E82;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+        display: flex;
+        padding-left: 16px;
+        margin-bottom: 24px;
+        white-space: nowrap;
+        flex-shrink: 0;
+        overflow-x: auto;
+    }
+
+    .slidemenu__active
+    {
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: 2px solid #B8FFEC;
+        background: #FFF;
+        padding: 8px;
+     }
+
+    .slidemenu__passive
+    {
+        
+        margin-left: 19.56px;
+        align-self: center;
+        padding: 8px;
+    }
+
+    
+
+    .slidemenu__passive:hover {
+        background-color: white;
+        box-shadow: 0 0 0 2px blue;
+        border-radius: 0.6rem;
+      }
+
+    .blur-element
+    {
+        position: absolute;
+        right: 0;
+        width: 24px;
+        height: 40px;
+        background: linear-gradient(270deg, #F8F8F8 0.04%, rgba(248, 248, 248, 0.00) 100%);
+    }
+
+    .outlook__all__text
+    {
+    
+        font-family: 'TTLakes-M';
+        transition: max-height 0.3s;
+        max-height: 100px;
+        color: #1B1C21;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 128.571% */
+        letter-spacing: 0.2px;
+        margin-left: 16px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        margin-top: 0;
+    }
+
+    .outlook__all__readMore
+    {
+        font-family: 'TTLakes-M';
+        display: flex;
+        margin-left: 16px;
+        margin-bottom: 16px;
+    }
+
+    .outlook__readMore__all__name
+    {
+        margin-left: 8px;
+        color: #1B1C21;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+    }
+
+    .outlook__preview
+    {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .title__repairImg{
+        display: none;
+    }
+    
+    
+
+
+
+@media (min-width: 768px)
+{
+    .about{
+        margin-bottom: 0;
+    }
+    .title{
+        padding-bottom: 32px;
+    }
+    .menuback__burger
+    {
+        margin-left: 24px;
+        order: -2;
+        
+    }
+    
+    .divider
+    {
+        order: -1;
+        margin-right: 20.73px;
+    }
+
+    .divider--right{
+        
+        margin-right: 20.73px;
+        width: 2px;
+        height: 32px;
+        flex-shrink: 0;
+        border-radius: 1px;
+        background: #EAEAEA;
+        
+    }
+
+    .menuback__group
+    {
+        order: 0;
+    }
+
+    .menuback__checkstatus
+    {
+        order: 4;
+        padding-right: 24px;
+    }
+
+    .menuback__repair
+    {
+        margin-left: 0;
+        order: 3;  
+    }
+
+    .menuback__divider__second
+    {
+        order: 2;
+        width: 2px;
+        height: 32px;
+        flex-shrink: 0;
+        background: #EAEAEA;
+        margin-top: 28px;
+        border-radius: 1px;
+        margin-bottom: 28px;
+        margin-right: 20px;
+        
+    }
+
+    .menuback__call
+    {
+        margin-left: auto;
+        display: block;
+        padding-right: 16px;
+        padding-left: 250px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .menuback__chat
+    {
+        display: block;
+        padding-right: 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .menuback__profile
+    {
+        display: block;
+        padding-right: 20px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .slidemenu 
+    {
+        margin-bottom: 40px;
+        padding-left: 24px;
+    }
+
+    .outlook__all__text
+    {
+        display: flex;
+        
+        
+        color: #1B1C21;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 128.571% */
+        letter-spacing: 0.2px;
+        margin-left: 24px;
+        padding-right: 48px;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .outlook__all
+    {
+        flex-direction: column;
+    }
+    
+    .outlook
+    {
+        width: 94%;
+        display: flex;
+       
+        
+    }
+
+    .outlook__preview
+    {
+        margin-left: auto;
+        width: auto;
+        height: 208px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: #F8F8F8;
+
+    }
+
+    .outlook__all__readMore
+    {
+        margin-bottom: 0;
+    }
+    
+    
+}
+
+@media (min-width: 1120px)
+{
+
+    .about{
+        margin-bottom: 50px;
+    }
+    
+
+    
+
+    .title
+    {
+        display: flex;
+        padding-top: 42px;   
+    }
+
+    .title__flex
+    {
+        
+        
+        padding-top: 0;
+       
+    }
+
+    .menuback{
+        display: none;
+    }
+
+    .title__name
+    {
+        color: #1B1C21;
+        text-align: right;
+        font-family: 'TTLakes-M';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+        padding-right: 8px;
+    }
+
+    .title__repair{
+        margin-left: auto;
+    }
+
+    .title__repair,
+    .title__checkstatus
+    {
+        
+        display: block;
+        visibility: visible;
+        color: #1B1C21;
+        font-family: 'TTLakes-M';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+    }
+
+    .title__repair{
+        width: 218px;
+        background-image: url(../img/repair.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-right: 32px;
+    }
+
+    .title__checkstatus{
+        margin-right: 30px;
+        text-align: start;
+        width: 165px;
+        background-image: url(../img/checkstatus.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .title__flex__name
+    {
+        padding-left: 30px;
+    }
+
+ 
+
+    .visible
+    {
+        padding-right: 30px;
+        display: block;
+        visibility: visible;
+    }
+
+    .slidemenu
+    {
+        display: flex;
+        padding-left: 40px;
+        flex-wrap: wrap;
+        
+    }
+
+    .outlook__all__text
+    {
+        flex-grow: 1;
+        
+        margin-left: 34px;
+        padding-right: 36px;
+    }
+
+    .outlook__all__readMore
+    {
+        margin-left: 32px;
+    }
+
+    .outlook__preview
+    {
+        
+        width: 531.346px;
+        height: 307px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: #F8F8F8;
+    }
+
+    .background{
+        margin-left: 320px;
+    }
+}
